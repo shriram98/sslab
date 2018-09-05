@@ -43,7 +43,7 @@ int main() {
         }
         if(remainingTime[i] == 0 && flag==1) {
             remainingProcs--;
-            printf("P[%d] : Turnaround Time: %d\t Waiting Time: %d", i+1, timeElapsed-arrivalTime[i], timeElapsed-arrivalTime[i]-burstTime[i]);
+            printf("P[%d] : Turnaround Time: %d\t Waiting Time: %d\n", i+1, timeElapsed-arrivalTime[i], timeElapsed-arrivalTime[i]-burstTime[i]);
             avgWait += timeElapsed - arrivalTime[i] - burstTime[i];
             avgTurnaround += timeElapsed - arrivalTime[i];
             flag = 0;
